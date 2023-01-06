@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+  Social Network Design
+</title>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+
+
+<style>
+@charset "UTF8";
+
+/*appliy reset:*/
+*{
+  margin: 0px;
+  padding: 0px;
+
+font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+
+width: 100vw;
+height: 100vh;
+
+background-color: black;
+
+}
+
+body{
+
+background: url('IMGs/fundo-madeira.jpg');
+background-repeat: no-repeat;
+background-image: top center;
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+main{
+
+position: relative;
+
+height:100vh;
+/*background-color: green;
+this background has been called for better organizing
+*/
+}
+
+section#cellphone{
+
+position: absolute;
+
+top: 50%;
+left:50%;
+transform:translate(-50%, -50%);
+
+
+width: 311px;
+height: 627px;
+
+/*background-color: blue;
+this background has been called for better organizing.
+*/
+
+background:url('IMGs/frame-iphone.png')no-repeat ;
+
+
+}
+
+
+iframe#screen{
+  
+  /*measurement made on time*/
+  position: relative;
+top:70px;
+left: 23px;
+ 
+/*below: measurement made on time*/
+height:479px;
+width:267px;
+
+
+}
+
+section#social-network{
+
+/*if create section selector then to call text-align will affect every section, on account, iframe tag will shift right*/
+
+text-align: right;
+
+}
+/*
+section#social-network > a > img or below
+
+width:
+since the images are already square, just decrease the width because the height will regress proportionally. 
+
+border-radius: 50% => half of the figure is round, on account, the other half as well(also)
+
+text-align: right => inside section#social-network img there is not effect. 
+
+
+*/
+section#social-network img{
+
+/*below:measurement made on time*/
+width: 60px;
+margin: 11px;
+
+border-radius:50%;
+
+/*measurement made on time*/
+box-shadow:5px 5px 10px rgba(0, 0, 0, 0.600);
+
+/*this effect is indispensable because its presence will activate the border effect on the same selector accompanied by hover*/
+box-sizing:border-box;
+
+
+
+}
+
+section#social-network img:hover{
+
+  /*border: 5px solid white, for example => hover effect over one image affects the others images, this is because the border effect is not part of the object: who can save is => box-sizing: border-box such effect if to call it in section#social-network img selector;*/
+border: 4px solid white;
+transform: translate(-4px, -4px);
+
+/*
+when applying transform: translate(-x%, -y%) effect it is compulsory regular box-shadow effect
+
+to slow down the transform effect to call: transition: transform .4s;
+or transition: transform .4s border 1s =>to slow down the border effect
+*/
+
+transition: transform .5s;
+
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+  <!--
+CUSTOMIZING IMAGES:
+.Take several(4 OR 5) screenshot of social network;
+.Transfer image to laptop;
+.Open GIMP software;
+.Select the images, then drag it to GIMP;
+.GIMP will asks if I want to keep color system;
+.I confirm that yes;
+.To locate the first screenshot;
+.In tasks bar => image => picture screen size => height: 10000 // displacement: x:0;
+y: 0 => //the images will grow down//;
+.To click over icon cross shape;
+.Move image where the goal is to position very close from horizontal line;
+.Then => to call another image => rectangle with dotted border icon =>to click and hold => choose rectangular selection => enter 'r'
+=>select part of image that i want =>ctrl + c => return the previous image(long image) => ctrl v => enter 'm' move // 'r' select =>
+organizing the copy of image => the images that have already been partially copied can be closed;
+.Then reduce preview to twelve and a half percent for better customization(below task bar);
+.diamond icon(crop image)//shift c//encompass desired part;
+. to put image 100% preview;
+.Reduce => image => resize image => width: 600 => resize;
+. to put image 100% preview;
+.export clapboard image => file => export as => the select type of file => jpg => save => to name => export => export; close GIMP.
+
+
+
+
+
+
+
+
+  -->
+
+<main>
+  <section id="cellphone">
+
+<iframe 
+
+src="HOME.html"name="screen"
+id="screen" scolling="auto"referrerpolicy="no-referrer-when-downgrade">
+
+<p>
+Your <a href="#" target="_blank">browser</a> is not compatible with that!
+</p>
+
+</iframe>
+
+
+  </section>
+
+  <section id="social-network">
+
+    <a href="HOME.html"target="screen">
+
+      <img src="IMGs/logo-home.jpg" alt="Home"></a><br>
+
+    <a href="YOUTUBE.html"target="screen">
+
+      <img src="IMGs/logo-youtube.jpg" alt="Youtube">
+
+    </a><br>
+
+    <a href="GITHUB.html"target="screen">
+
+      <img src="IMGs/logo-github.jpg" alt="GitHub">
+    
+    </a><br>
+<a href="INSTAGRAM.html"target="screen"><img src="IMGs/logo-instagram.jpg" alt="Instagram"></a><br>
+
+    <a href="TWITTER.html"target="screen">
+
+      <img src="IMGs/logo-twitter.jpg" alt="Twitter">
+    </a><br>
+
+    <a href="FACEBOOK.html"target="screen">
+
+      <img src="IMGs/logo-facebook.jpg" alt="Facebook">
+
+    </a>
+
+
+   
+    
+
+  </section>
+
+</main>
+  
+
+
+</body>
+</html>

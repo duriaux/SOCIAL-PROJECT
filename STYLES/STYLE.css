@@ -1,0 +1,165 @@
+
+@charset "UTF8";
+
+/*total reset */
+*{
+
+  margin:0px;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+background-color: black(body{}),
+background-color:green(main{}) and
+background-color:blue(section{})
+were called for better explanation from the site cradle phase
+*/
+
+html, body{
+
+width: 100vw;
+height: 100vh;
+background-color: black;
+
+}
+
+body{
+
+  /*to get wood background*/
+  background: url('../IMGs/fundo-madeira.jpg');
+
+  /*once wood background is big, so i need organizing for reposition:*/
+
+background-repeat: no-repeat;
+background-image: top center;
+background-size:cover;/*it will cover all screen*/
+background-attachment: fixed;
+
+}
+
+main{
+
+ position: relative;
+
+height: 100vh;
+/*background-color: green;*/
+
+
+}
+/*position: relative // position: absolute => allows centralize content below with help top: 50% and left: 50% and tranform: translate(-50%, -50%).*/
+
+section#cellphone{
+
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+/*
+height&width can be set through GIMP
+(looking for image => to click right button => GIMP => image bar => property of image)
+*/
+height: 627px;
+width:  311px;
+
+/*background-color: blue;
+after organizing image can i burn background color*/
+
+/*background: blue url('../IMGs/frame-iphone.png');*/
+
+background: url('../IMGs/frame-iphone.png');
+background-repeat: no-repeat;
+
+}
+
+iframe#screen{
+
+  position: relative;
+  top:80px;
+  left:22px;
+  width:269px;
+  height: 471px;
+  
+  }
+  /* BEFORE:
+  <* id="social-network">
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-home.jpg" alt="Home">
+      </a><br>
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-youtube.jpg" alt="Youtube">
+
+    </a><br>
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-github.jpg" alt="GitHub">
+    
+    </a><br>
+<a href="#"target="screen"><img src="IMGs/logo-instagram.jpg" alt="Instagram"></a><br>
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-twitter.jpg" alt="Twitter">
+    </a><br>
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-facebook.jpg" alt="Facebook">
+
+    </a>
+
+
+   
+   
+    
+AFTER
+
+ <section id="social-network">
+
+    <a href="HOME.html"target="screen">
+
+      <img src="IMGs/logo-home.jpg" alt="Home"></a><br>
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-youtube.jpg" alt="Youtube">
+
+    </a><br>
+
+    <a 
+    
+    CREATE SITE YOU TUBE:
+    href=""target="screen">
+
+      <img src="IMGs/logo-github.jpg" alt="GitHub">
+    
+    </a><br>
+<a href="#"target="screen"><img src="IMGs/logo-instagram.jpg" alt="Instagram"></a><br>
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-twitter.jpg" alt="Twitter">
+    </a><br>
+
+    <a href="#"target="screen">
+
+      <img src="IMGs/logo-facebook.jpg" alt="Facebook">
+
+    </a>
+
+
+   
+    
+
+  
+    
+
+
+
+  */
